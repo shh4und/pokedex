@@ -77,5 +77,6 @@ buttonDown.addEventListener("click", ()=>{ // volta 10 pokemons a partir do ID a
         pokeID-=10
         renderPokemon(pokeID)
 })
+screen.orientation.lock("landscape");
 
 renderPokemon(pokeID)
