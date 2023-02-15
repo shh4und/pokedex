@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P";
+}
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, red, white);
+    min-height: 100vh;
+}
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+.pokedex{
+    max-width:710px;
+    width: 100%;
+}
+.pokemon_img{
+    position: absolute;
+    bottom: 45%;
+    left: 20.2%;
+    height: 20%;
+}
+
+.pokemon_data1{
+    position: absolute;
+    bottom: 11.5%;
+    left: 17.5%;
+    font-size: clamp(4px, 5vw, 23px);
+}
+.pokemon_data2{
+    color: aliceblue;
+    font-size: clamp(4px, 3vw, 20px);
+    width: 30%;
+    position: absolute;
+    top: 39%;
+    right: 9.5%;
+}
+.pokemon_data3{
+    color: aliceblue;
+    font-size: clamp(4px, 3vw, 12px);
+    width: 14%;
+    height: 4.3%;
+    position: absolute;
+    bottom: 12%;
+    right: 25.8%;
+}
+
+.pokemon_data4{
+    color: aliceblue;
+    font-size: clamp(4px, 3vw, 12px);
+    width: 14%;
+    height: 4.3%;
+    position: absolute;
+    bottom: 12%;
+    right: 9.2%;
+}
+.type{
+    display: flex;
+    justify-content: center;
+}
+.pokemon_name{
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+.poke_form{
+    position: absolute;
+    width: 28.4%;
+    height: 6%;
+    bottom: 33.3%;
+    left: 14%;
+}
+.input_search{
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    outline: none;
+    border: 3px solid grey;
+    border-radius: 5px;
+    font-size: clamp(4px, 5vw, 13.5px);
+}
+.buttons{
+    position: absolute;
+    bottom: 17%;
+    left: 33%;
+    display: flex;
+    gap: 185%;
+    height: 4%;
+}
+.button-up{
+    position:absolute;
+    display: flex;
+    height: 4%;
+    left: 37.7%;
+    bottom: 24%;
+    transform: rotate(90deg);
+}
+.button-down{
+    position:absolute;
+    display: flex;
+    height: 4%;
+    left: 38%;
+    bottom: 10.4%;
+    transform: rotate(270deg);
+}
+.button{
+    color: aliceblue;
+    background-color: rgba(36, 46, 46, 0);
+    border: 0px;
+    height: 100%;
+    border-radius: 2px;
+    font-size: clamp(4px, 5vw, 1rem);
+}
+.btn-prev:active{
+    box-shadow: inset 4px -1px 10px #1a1a1a;
+}
+.btn-next:active{
+    box-shadow: inset -4px -1px 10px #1a1a1a;
+}
+.btn-up:active{
+    box-shadow: inset -4px -1px 10px #1a1a1a;
+}
+.btn-down:active{
+    box-shadow: inset -4px -1px 10px #1a1a1a;
+}
