@@ -11,6 +11,10 @@ const buttonUp = document.querySelector(".btn-up");
 const buttonDown = document.querySelector(".btn-down");
 let pokeID = 1;
 
+screen.addEventListener("orientationchange", () => {
+  console.log(`The orientation of the screen is: ${screen.orientation}`);
+});
+
 const fetchPokemon = async (pokemon) =>{
     const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
     if(APIResponse.status == 200){ // status "OK" da resposta da API
